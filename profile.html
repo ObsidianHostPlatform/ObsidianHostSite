@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - ObsidianHost</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #8a2be2;
+      cursor: pointer;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 2rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #8a2be2;
+    }
+
+    /* Profile Hero */
+    .hero {
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #8a2be2;
+    }
+
+    /* Profile Section */
+    .profile {
+      padding: 4rem 2rem;
+      background: #141414;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .profile h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #8a2be2;
+      text-align: center;
+    }
+
+    .profile-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      color: #8a2be2;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #ccc;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      background: #8a2be2;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #a64dff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" onclick="window.location.href='index.html'">ObsidianHost</div>
+    <ul>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- Profile Icon -->
+    <div onclick="window.location.href='profile.html'" style="margin-left: 2rem; cursor: pointer;">
+      <img src="images/user.png" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #8a2be2;">
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Your Profile</h1>
+    <p>Manage your subscriptions, settings, and account info.</p>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <h2>Account Dashboard</h2>
+    <div class="profile-sections">
+      <div class="card">
+        <h3>Account Info</h3>
+        <p>Username: Gamer123</p>
+        <p>Email: gamer123@example.com</p>
+        <button>Edit Info</button>
+      </div>
+      <div class="card">
+        <h3>Subscriptions</h3>
+        <p>Current Plan: Premium Hosting</p>
+        <p>Next Billing: Oct 15, 2025</p>
+        <button>Manage Plan</button>
+      </div>
+      <div class="card">
+        <h3>Settings</h3>
+        <p>Update your password, notification preferences, and more.</p>
+        <button>Go to Settings</button>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>Need help? Contact our support team anytime.</p>
+        <button >Contact Support</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ObsidianHost | Built for gamers, by gamers.</p>
+  </footer>
+</body>
+</html>
