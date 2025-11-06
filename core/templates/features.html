@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - ObsidianHost</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #8a2be2;
+      cursor: pointer;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 2rem;
+    }
+    nav ul li a {
+      color: #fff; /* White navbar links */
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #8a2be2; /* Purple hover */
+    }
+
+    /* Hero */
+    .hero {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #8a2be2;
+    }
+
+    /* Features */
+    .features {
+      padding: 4rem 2rem;
+      background: #141414;
+    }
+    .features h2 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #8a2be2;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .feature {
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .feature:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+    .feature h3 {
+      color: #8a2be2;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" onclick="window.location.href='index.html'">ObsidianHost</div>
+    <ul>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+     <!--- Profile Icon -->
+    <div onclick="window.location.href='profile.html'" style="margin-left: 2rem; cursor: pointer;">
+      <img src="/static/images/user.png" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #8a2be2;">
+    </div>
+  
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Our Features</h1>
+    <p>Discover why ObsidianHost is the ultimate Minecraft hosting platform.</p>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>What We Offer</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <h3>⚡ Blazing Fast Servers</h3>
+        <p>Powered by the fastest CPUs and NVMe SSD storage.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Rock-Solid Security</h3>
+        <p>DDoS protection and regular backups to keep you safe.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Full Customization</h3>
+        <p>Install mods, plugins, and configure your server your way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ObsidianHost | Obsidian Strong. Limitless Hosting.</p>
+  </footer>
+</body>
+</html>

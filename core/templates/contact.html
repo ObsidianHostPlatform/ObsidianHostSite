@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ObsidianHost</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #8a2be2;
+      cursor: pointer;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 2rem;
+    }
+    nav ul li a {
+      color: #fff; /* White navbar links */
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #8a2be2; /* Purple hover */
+    }
+
+    /* Hero */
+    .hero {
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #8a2be2;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 2rem;
+      background: #141414;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #8a2be2;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      background: #1f1f1f;
+      color: #f5f5f5;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background: #8a2be2;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #a64dff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" onclick="window.location.href='index.html'">ObsidianHost</div>
+    <ul>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+   <!--- Profile Icon -->
+    <div onclick="window.location.href='profile.html'" style="margin-left: 2rem; cursor: pointer;">
+      <img src="/static/images/user.png" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #8a2be2;">
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Get in touch with our team below.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Send Us a Message</h2>
+    <form>
+      <div>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Type your message here..." required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ObsidianHost | Obsidian Strong. Limitless Hosting.</p>
+  </footer>
+</body>
+</html>
